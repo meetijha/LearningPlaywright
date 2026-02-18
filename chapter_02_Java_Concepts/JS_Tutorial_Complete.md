@@ -1,6 +1,4 @@
 # JavaScript Complete Tutorial
-### TheTestingAcademy | Beginner to Advanced
-
 ---
 
 ## 🟢 SECTION 1: IDENTIFIERS IN JAVASCRIPT
@@ -1053,19 +1051,5 @@ async function testAPI(endpoint) {
 | map | Transform to new array | No |
 | filter | Select matching items | No |
 | reduce | Accumulate to one value | No |
-
----
-
-## 🟢 NEXT 5 TOPICS TO COVER
-
-| # | Topic | What Students Will Learn |
-|---|-------|--------------------------|
-| 1 | **Functions** | Declaration, Expression, Arrow, IIFE, Closures, Callbacks, Higher-order functions |
-| 2 | **Objects & Prototypes** | Object methods, this keyword, Prototype chain, ES6 Classes, Destructuring |
-| 3 | **Arrays In-Depth** | splice, slice, find, includes, flat, sort, every, some, destructuring |
-| 4 | **Async JavaScript** | Callbacks, Promises, async/await, Event Loop, Error handling in async |
-| 5 | **DOM Manipulation** | Selectors, Events, Event Delegation, Forms — essential for QA automation |
-
-**Why This Order?** Functions are used everywhere. Objects are JS's foundation. Arrays are the most common data structure in testing. Async JS is critical for modern web testing. DOM connects everything to browser automation.
 
 ---
