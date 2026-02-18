@@ -1,5 +1,5 @@
 # Hoisting in JavaScript — Complete Guide
-### TheTestingAcademy | var | let | const | Functions | Classes
+###  var | let | const | Functions | Classes
 
 ---
 
