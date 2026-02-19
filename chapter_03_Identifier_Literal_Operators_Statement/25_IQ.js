@@ -54,3 +54,4 @@ let inputAge = "true";
 if (inputAge == false) {
     console.log("Age is empty/invalid");  // WRONG! "0" == false is true
 }
+
