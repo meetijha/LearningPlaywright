@@ -1,0 +1,21 @@
+// ?? is called the Nullish Coalescing Operator, introduced in ES2020.
+// It returns the right-hand side value only when the left-hand side is null or undefined — nothing else.
+
+let value = null ?? "default";
+console.log(value); // "default"
+
+let value2 = undefined ?? "fallback";
+console.log(value2); // "fallback"
+
+let value3 = 0 ?? "fallback";
+console.log(value3); // 0  ← important!
+
+let value4 = "" ?? "fallback";
+console.log(value4); // ""  ← important!
+
+// || treats all falsy values (0, "", false, null, undefined, NaN) as "empty" and returns the right side. But ?? only cares about null and undefined.
+// OR operator
+let a = 0 || "default";    // "default" (0 is falsy)
+
+// Nullish Coalescing
+let b = 0 ?? "default";    // 0 (0 is NOT null/undefined)
