@@ -7,16 +7,31 @@
 // D: 60-69
 // F: 0-59
 
-let score = 95;
+let grade;
+let score = "Meeti";
 
-if(score>=90){
-    console.log("Grade: A");
-} else if(score>=80){
-    console.log("Grade: B");
-} else if(score>=70){
-    console.log("Grade: C");
-} else if(score>=60){
-    console.log("Grade: D");
-} else {
-    console.log("Grade: F");
+if (typeof score !== "number") {
+    console.log("Are you fool,why you are gving score as not a number");
+    return;
 }
+
+if (score < 0 || score > 100) {
+    console.log("Are you fool,why you are gving score <0 or. > 100");
+    return;
+}
+
+if (score >= 90) {
+    grade = "A";
+} else if (score >= 80) {
+    grade = "B";
+}
+else if (score >= 70) {
+    grade = "C";
+}
+else if (score >= 60) {
+    grade = "D";
+} else {
+    grade = "F";
+}
+console.log("For the score", score, "Grade is ->", grade);
+console.log(`For the score ${score} "Grade is -> ", ${grade}`);
