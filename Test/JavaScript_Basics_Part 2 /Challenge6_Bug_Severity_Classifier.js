@@ -9,3 +9,34 @@
 // - often + blocker → P1 | often + major → P2 | often + minor → P3
 // - rarely + blocker → P2 | rarely + major → P3 | rarely + minor → P4
 
+let frequency = "often"; // Possible values: "always", "often", "rarely"
+let impact = "major"; // Possible values: "blocker", "major", "minor"
+
+let severityLevel = null;
+
+if(impact === "blocker") {
+    if(frequency === "always") 
+        severityLevel = "P0";
+    else if (frequency === "often")
+        severityLevel = "P1";
+    else if (frequency === "rarely")
+        severityLevel = "P2";
+}
+else if (impact === "major") {
+    if(frequency === "always") 
+        severityLevel = "P1";
+    else if (frequency === "often")
+        severityLevel = "P2";
+    else if (frequency === "rarely")
+        severityLevel = "P3";
+}
+else if (impact === "minor") {
+    if(frequency === "always") 
+        severityLevel = "P2";
+    else if (frequency === "often")
+        severityLevel = "P3";
+    else if (frequency === "rarely")
+        severityLevel = "P4";
+}
+
+console.log(`Bug Severity Level: ${severityLevel}`);

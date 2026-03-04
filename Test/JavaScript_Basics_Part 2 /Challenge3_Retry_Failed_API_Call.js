@@ -5,12 +5,13 @@
 // Simulate random success/failure using Math.random() (40% chance of success: randomValue > 0.6). 
 // Log each attempt and print the final result.
 
-MAX_ATTEMPTS = 5
+let max_attempts = 5
 
 let attempt = 0;
 let success = false;
 
-do {
+while (attempt < max_attempts)
+    {
     attempt++;
     let randomValue = Math.random();
     console.log(`Attempt ${attempt}: Random Value = ${randomValue.toFixed(2)}`);
@@ -22,7 +23,8 @@ do {
     } else {
         console.log("API call failed. Retrying...");
     }
-} while (attempt < MAX_ATTEMPTS);
+
+}
 
 if (!success) {
     console.log("API call failed after maximum attempts.");
