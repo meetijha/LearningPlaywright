@@ -19,10 +19,10 @@ results.includes("skip");       // false
 // find — returns first matching element
 
 let nums = [10, 25, 30, 45];
-nums.find(x => x > 20);  // 25,30,45 -> A -25
+console.log(nums.find(x => x > 20));  // 25, first element > 20
 
 // findIndex
-nums.findIndex(n => n > 20);
+console.log(nums.findIndex(n => n > 20)); //1, index of first element > 20
 
-nums.findLast(n => n > 20); // 45] 
-nums.findLastIndex(n => n > 20);// 3
+console.log(nums.findLast(n => n > 20)); // 45, last element > 20
+console.log(nums.findLastIndex(n => n > 20));// 3, index of last element > 20

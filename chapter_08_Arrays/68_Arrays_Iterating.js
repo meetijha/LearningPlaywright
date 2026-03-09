@@ -10,7 +10,7 @@ console.log("----");
 
 // for...of (cleanest for values)
 for (let test of tests) {
-    console.log(test) // value
+    console.log(test) // value =of
 }
 console.log("----");
 
@@ -24,12 +24,12 @@ console.log("----");
 // entries() — index + value
 
 for (let [i, test] of tests.entries()) {
-    console.log(i, test);
+    console.log(i, test); // index + value
 }
 
 console.log("----");
 
-let students = ["methis", "senthil", "ajay", "rahul"];
+let students = ["meeti", "senthil", "ajay", "rahul"];
 
 
 for (let student in students) {
