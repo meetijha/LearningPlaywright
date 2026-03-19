@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "type": "stdio"
+    },
+    "mcp-atlassian": {
+      "command": "uvx",
+      "args": ["mcp-atlassian"],
+      "env": {
+        "JIRA_URL": "https://jirabugzz.atlassian.net/",
+        "JIRA_USERNAME": "meetijha@gmail.com",
+        "JIRA_API_TOKEN": "your_api_token",
+        "CONFLUENCE_URL": "https://meetiha.atlassian.net/",
+        "CONFLUENCE_USERNAME": "meetijha@gmail.com",
+        "CONFLUENCE_API_TOKEN": "your_api_token"
+      }
+    }
+  },
+  "inputs": []
+}
