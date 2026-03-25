@@ -27,11 +27,11 @@ console.log("**************************************");
 // Adding a property
 person.gender = "Female";
 person["country"] = "India";
-console.log(person);
+console.log("After adding properties:", person);
 
 // Deleting a property
 delete person.city;
-console.log(person);
+console.log("After deleting city:", person);
 
 console.log("**************************************");
 
