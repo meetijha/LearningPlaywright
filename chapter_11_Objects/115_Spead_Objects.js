@@ -8,11 +8,11 @@ console.log(merged);
 
 //  this keyword
 const user = {
-    name: "Pramod",
+    name: "Meeti",
     saymyName(lastName) {
         this.name += lastName;
         return this.name;
     }
 }
 
-console.log(user.saymyName("Dutta"));
+console.log(user.saymyName("Jha"));
