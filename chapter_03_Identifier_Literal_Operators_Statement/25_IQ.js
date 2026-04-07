@@ -14,7 +14,8 @@ undefined == 0 //false
 undefined == "" //false
 undefined == false //false
 NaN == NaN  //false
-
+""==" " //false, because they are different strings ("" is an empty string, while " " is a string containing a space character).
+0 == " " // true, because " " is a non-empty string which is truthy, but when compared to 0, it is converted to a number (0), which is falsy. So they are considered equal in non-strict comparison.
 console.log("" === false); //false, because they are of different types ("" is a string, while false is a boolean).
 console.log("" == false); // true, because "" is falsy and false is falsy, so they are considered equal in non-strict comparison.
 console.log(null == undefined); // true, because null and undefined are considered equal in non-strict comparison, even though they are of different types.
@@ -23,8 +24,8 @@ console.log(0 == false); // true, because 0 is falsy and false is falsy, so they
 console.log(0 === false); // false, because they are of different types (0 is a number, while false is a boolean).
 
 
-console.log("0" == false); //true
-console.log("" == "0");  //false
+console.log("0" == false); // true, because "0" is a non-empty string which is truthy, but when compared to false, it is converted to a number (0), which is falsy. So they are considered equal in non-strict comparison.
+console.log("" == "0");  //false, because they are different strings ("" is an empty string, while "0" is a string containing the character '0').
 
 let name = null;
 let age;
