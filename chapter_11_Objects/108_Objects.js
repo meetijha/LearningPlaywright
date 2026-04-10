@@ -27,24 +27,24 @@ console.log(a22["Status"]);
 
 let b = a;  // b copies the REFERENCE, not the object
 b.status = "fail";
-console.log(a.status);
+console.log(a.status); // "fail" — because a and b point to the same object in memory
 
 
 // Two separate objects — different memory
 let c = { status: "pass" };
 let d = { status: "pass" };
-console.log(c === d);
+console.log(c === d); // false — because c and d are different objects in memory, even though they have the same content
 
 
 const t_json = {
     "name": "meeti",
     "age": 10
 };
-console.log(t_json);
+console.log(t_json); // { name: 'meeti', age: 10 } — JSON object, keys are in double quotes, but when printed, it looks like a regular JavaScript object
 
 
 const t_js = {
     name: "meeti",
     age: 10
 };
-console.log(t_js);
+console.log(t_js); // { name: 'meeti', age: 10 } — regular JavaScript object, keys are not in quotes, but when printed, it looks the same as JSON

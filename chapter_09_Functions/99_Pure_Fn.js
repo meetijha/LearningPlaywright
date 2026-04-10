@@ -20,3 +20,13 @@ console.log(isPassing(threshold));
 
 threshold = 50;
 console.log(isPassing(threshold));
+
+//another example of impure function
+let count = 0;
+function increment() {
+    count++; // modifies external variable
+    return count;
+}
+
+console.log(increment());
+console.log(increment());
