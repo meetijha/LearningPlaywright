@@ -21,6 +21,7 @@
     "@types/node": "^25.3.3"
   },
   "dependencies": {
-    "@playwright/mcp": "^0.0.68"
+    "@playwright/mcp": "^0.0.68",
+    "ts-node": "^10.9.2"
   }
 }

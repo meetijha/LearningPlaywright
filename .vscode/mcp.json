@@ -9,7 +9,9 @@
     },
     "mcp-atlassian": {
       "command": "uvx",
-      "args": ["mcp-atlassian"],
+      "args": [
+        "mcp-atlassian"
+      ],
       "env": {
         "JIRA_URL": "https://jirabugzz.atlassian.net/",
         "JIRA_USERNAME": "meetijha@gmail.com",
@@ -18,6 +20,14 @@
         "CONFLUENCE_USERNAME": "meetijha@gmail.com",
         "CONFLUENCE_API_TOKEN": "your_api_token"
       }
+    },
+    "playwright-test": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "playwright",
+        "run-test-mcp-server"
+      ]
     }
   },
   "inputs": []
