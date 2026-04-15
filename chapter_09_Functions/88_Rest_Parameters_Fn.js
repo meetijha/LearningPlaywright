@@ -2,6 +2,9 @@
 function logResults(suiteName, ...results) {
     console.log(`Suite: ${suiteName}`);
     console.log(`Results: ${results.join(", ")}`);
+
+    console.log("Suite1",suiteName);
+    console.log("Results1",results.join(", "));
 }
 
 logResults("Auth Suite", "pass", "fail", "pass", "skip");

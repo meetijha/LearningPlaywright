@@ -19,7 +19,7 @@ results.includes("skip");       // false
 // find — returns first matching element
 
 let nums = [10, 25, 30, 45];
-console.log(nums.find(x => x > 0));  // 25, first element > 20
+console.log(nums.find(x => x > 20));  // 25, first element > 20
 
 // findIndex
 console.log(nums.findIndex(n => n > 20)); //1, index of first element > 20
