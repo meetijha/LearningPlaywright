@@ -32,16 +32,9 @@ let b = [3, 4];
 let c = a.concat(b);
 console.log(c);// [1, 2, 3, 4] - concatenates arrays a and b
 
-// concat can also take multiple arrays and values
-let d = a.concat(b, [5, 6]);
-console.log(d);// [1, 2, 3, 4, 5, 6] - concatenates arrays a and b, and adds the values 5 and 6
-
 // spread (modern way) - concatenation. (...)
 let d = [...a, ...b];
-console.log(d);// [1, 2, 3, 4] - concatenates arrays a and b using spread operator
-
-let e = [...a, ...b, 5, 6];
-console.log(e);// [1, 2, 3, 4, 5, 6] - concatenates arrays a and b using spread operator, and adds the values 5 and 6
+console.log(d);// 
 
 // ... , ===
 // Join 
