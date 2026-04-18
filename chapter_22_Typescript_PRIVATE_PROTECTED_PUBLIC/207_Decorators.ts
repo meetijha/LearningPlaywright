@@ -1,3 +1,19 @@
+function role(role : string){
+
+    return function(constructor : Function){
+        constructor.prototype.role = role;
+    }
+}
+
+@role("admin")
+class Admin{
+
+}
+
+const admin = new Admin();
+console.log((admin as any).role); // Output: admin    
+
+
 // WHAT id DECORATORS IN TYPESCRIPT?
 // Decorators are a powerful feature in TypeScript that allow you to 
 // modify the behavior of classes, methods, properties, or parameters at design time. 
