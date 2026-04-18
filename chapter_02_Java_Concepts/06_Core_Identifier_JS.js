@@ -56,7 +56,7 @@ var π = 3.14;
 console.log(π);
 
 
-var नमस्ते = "Hi";
+var नमस्ते = "Hi";//
 console.log(नमस्ते);
 
 var _ = "Hello";

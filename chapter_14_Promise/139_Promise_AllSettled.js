@@ -7,4 +7,5 @@ Promise.allSettled([
         console.log("Test " + (i + 1) + ":", r.status, "-", r.value || r.reason);
     });
 })
+// r.value is for resolved promises, r.reason is for rejected promises. 
 // This is like a test report — you want results for ALL tests, not just stop at the first failure.
