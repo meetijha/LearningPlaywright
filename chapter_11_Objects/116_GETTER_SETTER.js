@@ -9,6 +9,21 @@ const user = {
     }
 };
 
-console.log(user.fullName);
-user.fullName = "Amit Sharma";
-console.log(user.fullName);
+
+
+
+
+//Getter
+console.log(user.fullName);// MeetiJha
+
+// Setter cannot be called directly as a function, 
+// user.fullName("New Name"); // TypeError: user.fullName is not a function
+
+user.fullName = "Amit Sharma"; // allowed
+console.log(user.fullName);// AmitSharma
+
+
+// Usage of set in above example
+user.fullName = "John Doe";
+console.log(user.firstName); // John
+console.log(user.lastName); // Doe

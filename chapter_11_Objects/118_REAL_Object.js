@@ -26,5 +26,5 @@ const config = {
     logLevel: 'INFO',
 
     // Retry configuration
-    retryCount: parseInt(process.env.RETRY_COUNT || '3', 10),
+    retryCount: parseInt(process.env.RETRY_COUNT || '3', 10), // default to 3 retries if not set in environment variables, 10 is the radix for parsing the string as a decimal number. 
 };

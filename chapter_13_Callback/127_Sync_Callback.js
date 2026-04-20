@@ -1,6 +1,6 @@
 let testResults = ["PASS", "FAIL", "PASS", "SKIP"];
 
-testResults.forEach(function (result, index) {
+testResults.forEach(function (result, index) {// sequence of result and index is like this because foreach function format is like this forEach(function(currentValue, index, array) { ... }, thisArg);
     console.log("Test" + index + " -> " + result);
 });
 
