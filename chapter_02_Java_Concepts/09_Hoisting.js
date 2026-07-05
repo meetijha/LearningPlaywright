@@ -9,7 +9,7 @@
 // ---- Phase 2: Execution ----
 console.log(a); // undefind
 var a = "Meeti";
-console.log(a); // changed
+console.log(a); // Meeti
 
 // Hoisting does NOT physically move your code. 
 // It is a mental model to understand how the JS engine handles declarations during compilation.

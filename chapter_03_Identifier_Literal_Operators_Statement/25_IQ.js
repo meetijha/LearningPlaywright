@@ -37,17 +37,17 @@ name = "meeti";
 
 var a = 0 / 0;
 var a1 = 0.0 / 0.0;
-console.log(a);
+console.log(a); // NaN
 
 
 let a2;
-console.log(a2);
+console.log(a2);// undefined
 
 let a3 = null;
-console.log(a3);
+console.log(a3);// null
 
 let red = "#880808";
-console.log(red);
+console.log(red);// #880808
 
 let inputAge = "true";
 

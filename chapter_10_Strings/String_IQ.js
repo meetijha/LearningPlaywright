@@ -9,7 +9,7 @@ url.endsWith("/dashboard");// true
 
 // ✅2. Extract status code from log message
 let log = "[ERROR] 2024-03-07 TestCase: login - Status: 500";
-let status = log.match(/Status: (\d+)/)[1]; 
+let status = log.match(/Status: (\d+)/)[1];
 console.log(status); //Answer: "500"
 
 // ✅3. Format test ID with leading zeros

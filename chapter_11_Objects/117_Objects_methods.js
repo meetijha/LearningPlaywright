@@ -1,8 +1,8 @@
 const obj = { a: 1, b: 2, c: 3 };
 
-console.log(Object.keys(obj));
-console.log(Object.values(obj));
-console.log(Object.entries(obj));
+console.log(Object.keys(obj)); // [ 'a', 'b', 'c' ]
+console.log(Object.values(obj)); // [ 1, 2, 3 ]
+console.log(Object.entries(obj)); // [ [ 'a', 1 ], [ 'b', 2 ], [ 'c', 3 ] ]
 
 const user = { name: "John", age: 30 };
 
