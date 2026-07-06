@@ -27,3 +27,7 @@ console.log(user.fullName);// AmitSharma
 user.fullName = "John Doe";
 console.log(user.firstName); // John
 console.log(user.lastName); // Doe
+
+// Direct modification also allowed
+user.firstName='Aaryav';
+console.log(user.fullName); // AaryavDoe

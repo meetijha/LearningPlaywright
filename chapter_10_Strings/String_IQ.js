@@ -27,7 +27,7 @@ console.log(testId); // staging_auth_007
 // ✅5. Parse query parameters from URL
  let testUrl = "https://app.com/search?query=login&page=2&sort=asc"; 
  let params = Object.fromEntries( testUrl.split("?")[1].split("&").map(p => p.split("=")) );
-  console.log(params); // { query: "login", page: "2", sort: "asc" }
+  console.log(params); // { query: "login", page: "2", sort: "asc" }, returned in object format because map() returns an array of arrays, and Object.fromEntries() converts that array of arrays into an object with key-value pairs.
 
  // ✅6. Mask sensitive information in logs
 let token = "Bearer eyJhbGciOiJIUzI1NiJ9.secret"; 

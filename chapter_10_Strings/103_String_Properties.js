@@ -2,7 +2,7 @@
 
 let str = "Hello, World!";
 // Length ( start from 1)
-console.log(str.length);
+console.log(str.length);// 13
 
 // Access by index
 console.log(str[0]); // "H"
