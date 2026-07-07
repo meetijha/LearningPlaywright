@@ -1,6 +1,7 @@
 class Car {
     // Attribute
     // Constructor
+    // we havent declared the attribute name, but we can still assign it in the constructor because JS allows dynamic properties to be added to objects.
     constructor(assigned_name) {
         this.name = assigned_name;
     }

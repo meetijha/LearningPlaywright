@@ -7,7 +7,7 @@ let scores = [
 ];
 
 let rowSums = scores.map(row => row.reduce((a, b) => a + b, 0));
-console.log(rowSums);
+console.log(rowSums); // [ 253, 175, 275 ]
 
 
 let suiteResults = [
